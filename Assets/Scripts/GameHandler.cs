@@ -15,11 +15,15 @@ public class GameHandler : MonoBehaviour
     public int rowCount;
 
     public static Entity[] GemPrefabs;
-    
+
+    public static GameHandler Instance { get; private set; }
+
     private EntityManager _em;
 
     void Start()
     {
+        Instance = this;
+
         _em = World.Active.EntityManager;
 
         GemPrefabs = new Entity[gems.Length];
