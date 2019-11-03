@@ -37,9 +37,6 @@ namespace Systems
                     {
 //                        _matchedMap[new float2(positionComponent.Value.x, positionComponent.Value.y)] = entity;
                     }
-                    
-
-                    Debug.Log("SelectedGemPosition: " + selectedGemPosition);
                 }
             });
         }
